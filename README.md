@@ -1,4 +1,4 @@
-# Automatic Trafic
+# Simple Automatic Street Light with Arduino Uno
 
 ## Pin di LDR ke Arduino UNO (bagian Power & Analog In)
 
