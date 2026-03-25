@@ -1,32 +1,29 @@
 # Simple Automatic Street Light with Arduino Uno
 
-## Alat
+## Components
 1. Arduino Uno
-2. LDR Sensor Module
-3. Resistor 220 ohm
+2. LDR (Light Dependent Resistor) Sensor Module
+3. 220-ohm Resistor
 4. LED
-5. Breadboard & Kabel
+5. Breadboard & Jumper Wires
 
+## LDR to Arduino UNO Pin Mapping (Power & Analog In)
 
-## Pin di LDR ke Arduino UNO (bagian Power & Analog In)
-
-| Pin di Modul LDR Sensor | Pin di Arduino Uno |              Keterangan               |
+| LDR Sensor Module Pin | Arduino Uno Pin |              Description               |
 | :---------------------: | :----------------: | :-----------------------------------: |
 |           VCC           |         5V         |                 Power                 |
 |           GND           |        GND         |                Ground                 |
-|     AO (Analog Out)     |         AO         | Data Analog (untuk baca angka cahaya) |
+|     AO (Analog Out)     |         AO         | Analog Data (to read light) |
 
-## Pin Lampu LED ke Arduno dan Resistor
+## LED and Resistor Connection
+1. Connect the long leg of the LED (Anode) to Pin 9 on the Arduino (Digital PWM).
+2. Connect the short leg of the LED (Cathode) to the 220-ohm resistor. Then, connect the other end of the resistor to the GND pin on the Arduino. The resistor is required to prevent the LED from burning out.
 
-1. Kaki panjang LED (Anoda) sambungkan ke Pin 9 Arduino (Digital PWM)
-2. Kaki pendek LED (Katoda) sambungkan ke resistor (220 ohm), kaki resistor satunya sambungkan ke GND Arduino (Digital PWM). Resistor dibutuhkan agar LED tidak putus.
-
-## Cara program arduino
-
-1. Download arduino ide di laptop
-2. Hubungkan Arduino: Pakai kabel USB, colok Arduino Uno ke laptop.
-3. Setting Board: di Arduino IDE, buka menu Tools > Board, pilih Arduino Uno.
-4. Setting Port: Buka Tools > Port, pilih port yang muncul (biasanya namanya COM3, COM4, dst).
-5. Buat kode untuk arduino (Sketch)
-6. Lalu Verify (icon centang) : untuk cek apakah ada kode yang salah atau tidak. 
-7. Lalu Upload (icon panah ke kanan) : proses mengirim kode dari laptop ke memori arduino, tunggu sampai muncul tulisan "Done Uploading".
+## How to Program the Arduino
+1. Install Arduino IDE: Download and install the Arduino IDE on your computer.
+2. Connect the Arduino: Use a USB cable to connect the Arduino Uno to your laptop.
+3. Board Settings: In the Arduino IDE, go to Tools > Board and select Arduino Uno.
+4. Port Settings: Go to Tools > Port and select the active port (typically labeled as COM3, COM4, etc.).
+5. Write the Sketch: Type your code into the IDE.
+6. Verify: Click the Checkmark icon to compile the code and ensure there are no syntax errors.
+7. Upload: Click the Right Arrow icon to send the code from your laptop to the Arduino's memory. Wait until the status says "Done Uploading."
