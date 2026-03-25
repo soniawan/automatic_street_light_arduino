@@ -1,5 +1,13 @@
 # Simple Automatic Street Light with Arduino Uno
 
+## Alat
+1. Arduino Uno
+2. LDR Sensor Module
+3. Resistor 220 ohm
+4. LED
+5. Breadboard & Kabel
+
+
 ## Pin di LDR ke Arduino UNO (bagian Power & Analog In)
 
 | Pin di Modul LDR Sensor | Pin di Arduino Uno |              Keterangan               |
