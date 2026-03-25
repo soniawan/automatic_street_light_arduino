@@ -15,6 +15,9 @@
 |           GND           |        GND         |                Ground                 |
 |     AO (Analog Out)     |         AO         | Analog Data (to read light) |
 
+![Pin Mapping 1](images/board2.jpg)
+![Pin Mapping 2](images/board1.jpg)
+
 ## LED and Resistor Connection
 1. Connect the long leg of the LED (Anode) to Pin 9 on the Arduino (Digital PWM).
 2. Connect the short leg of the LED (Cathode) to the 220-ohm resistor. Then, connect the other end of the resistor to the GND pin on the Arduino. The resistor is required to prevent the LED from burning out.
